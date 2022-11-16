@@ -75,12 +75,25 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'job.wsgi.application'
 
-DATABASES = {
+""" DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+} """
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd5i10t29l0jgh0',
+        'USER': 'mqvkzwbuwfazam',
+        'PASSWORD': 'e142ae784fb68d783358d6cc79a9bf82ef6d2537006aa1ac6429b99af3b2d97f',
+        'HOST': 'ec2-3-209-39-2.compute-1.amazonaws.com',
+        'PORT': '5432'
+    }
 }
+
+
 #for debug toolbar
 INTERNAL_IPS = [
     # ...
