@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  
+<head>
+    <title>
+        Blog
+    </title>
+      
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+  
+<body>
+    <section class="section-hero overlay inner-page bg-image" style="background-image: url('{% static 'images/ved.jpg' %}');" id="home-section"></section>
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <h1>Blog RSS FEED JUNIOR-JOBS</h1>
+                </div>
+            </div>
+            <br>
+
+        </div>
+    </section>
+</body>
+  
+
+{% endblock %}

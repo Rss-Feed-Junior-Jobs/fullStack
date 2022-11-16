@@ -22,6 +22,9 @@ def is_ajax(request):
 def pricing_view(request):
     return render(request, 'jobapp/pricing.html')
 
+def blog_view(request):
+    return render(request, 'jobapp/blog.html')
+
 def aboutUs_view(request):
     return render(request, 'jobapp/aboutUs.html')
 
