@@ -21,7 +21,7 @@ SECRET_KEY = 'etdq)uvq=t0rc&ams5_ovn6w8bcwknjj0u97*(#n^(76x*+dr1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000, rss-feed-project.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1:8000', '127.0.0.1', 'rss-feed-project.herokuapp.com']
 
 
 # Application definition
