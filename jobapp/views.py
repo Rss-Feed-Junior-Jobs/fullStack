@@ -25,6 +25,9 @@ def pricing_view(request):
 def aboutUs_view(request):
     return render(request, 'jobapp/aboutUs.html')
 
+def contactUs_view(request):
+    return render(request, 'jobapp/contactUs.html')
+
 def home_view(request):
 
     published_jobs = Job.objects.filter(is_published=True).order_by('-timestamp')
