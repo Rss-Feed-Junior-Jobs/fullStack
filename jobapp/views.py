@@ -25,6 +25,9 @@ def pricing_view(request):
 def blog_view(request):
     return render(request, 'jobapp/blog.html')
 
+def blog_1_view(request):
+    return render(request, 'jobapp/blog-1.html')
+
 def aboutUs_view(request):
     return render(request, 'jobapp/aboutUs.html')
 
@@ -32,8 +35,9 @@ def contactUs_view(request):
     return render(request, 'jobapp/contactUs.html')
 
 def home_view(request):
-
+    print(Job)
     published_jobs = Job.objects.filter(is_published=True).order_by('-timestamp')
+    print(published_jobs)
     jobs = published_jobs.filter(is_closed=False)
     total_candidates = User.objects.filter(role='employee').count()
     total_companies = User.objects.filter(role='employer').count()
@@ -73,6 +77,7 @@ def home_view(request):
     'total_completed_jobs':len(published_jobs.filter(is_closed=True)),
     'page_obj': page_obj
     }
+    print(jobs)
     print('ok')
     return render(request, 'jobapp/index.html', context)
 

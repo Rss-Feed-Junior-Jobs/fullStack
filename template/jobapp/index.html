@@ -70,7 +70,7 @@
   </div>
 </section>
 
-<section id="ajax_listing_paginattion" class="site-section">
+<!-- <section id="ajax_listing_paginattion" class="site-section">
   <div class="container">
 
     {% if page_obj %}
@@ -121,7 +121,7 @@
     {% include 'jobapp/paginator.html' %}
   </div>
   {% endif %}
-</section>
+</section> -->
 
 <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('{% static 'images/ved.jpg' %}');">
   <div class="container">
@@ -132,7 +132,7 @@
         <p class="mb-0 text-white lead">¡Ofrece miles de oportunidades a un click.</p>
       </div>
       <div class="col-md-3 ml-auto">
-        <a href="{% url 'jobapp:create-job' %}" class="btn btn-warning btn-block btn-lg">Post Your Job</a>
+        <a href="{% url 'jobapp:create-job' %}" class="btn btn-warning btn-block btn-lg">Publica un empleo</a>
       </div>
     </div>
     {% elif request.user.role == "employee" %}
@@ -157,44 +157,6 @@
     </div>
     {% endif %}
   </div>
-</section>
-<section class="bg-light pt-5 testimony-full">
-
-  <div class="owl-carousel single-carousel">
-
-
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center text-center text-lg-left">
-          <blockquote>
-            <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores
-              repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
-            <p><cite> &mdash; Corey Woods, @Dribbble</cite></p>
-          </blockquote>
-        </div>
-        <div class="col-lg-6 align-self-end text-center text-lg-right">
-          <img src="images/person_transparent_2.png" alt="Image" class="img-fluid mb-0">
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center text-center text-lg-left">
-          <blockquote>
-            <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores
-              repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
-            <p><cite> &mdash; Chris Peters, @Google</cite></p>
-          </blockquote>
-        </div>
-        <div class="col-lg-6 align-self-end text-center text-lg-right">
-          <img src="images/person_transparent.png" alt="Image" class="img-fluid mb-0">
-        </div>
-      </div>
-    </div> -->
-
-  </div>
-
 </section>
 
 

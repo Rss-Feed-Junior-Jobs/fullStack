@@ -19,6 +19,7 @@ urlpatterns = [
     path('aboutUs/', views.aboutUs_view, name='aboutUs'),
     path('contactUs/', views.contactUs_view, name='contactUs'),
     path('blog/', views.blog_view, name='blog'),
+    path('blog-1/', views.blog_1_view, name='blog-1'),
     path('dashboard/', views.dashboard_view, name='dashboard'),
     path('dashboard/employer/job/<int:id>/applicants/', views.all_applicants_view, name='applicants'),
     path('dashboard/employer/job/edit/<int:id>', views.job_edit_view, name='edit-job'),
