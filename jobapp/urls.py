@@ -17,6 +17,7 @@ urlpatterns = [
     path('result/', views.search_result_view, name='search_result'),
     path('pricing/', views.pricing_view, name='pricing'),
     path('blog/', views.blog_view, name='blog'),
+    path('blog-1/', views.blog_1_view, name='blog-1'),
     path('aboutUs/', views.aboutUs_view, name='aboutUs'),
     path('contactUs/', views.contactUs_view, name='contactUs'),
     path('dashboard/', views.dashboard_view, name='dashboard'),
