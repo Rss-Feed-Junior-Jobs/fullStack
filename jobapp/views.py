@@ -31,6 +31,9 @@ def blog_1_view(request):
 def legal_view(request):
     return render(request, 'jobapp/legal.html')
 
+def qa_view(request):
+    return render(request, 'jobapp/qa.html')
+
 def aboutUs_view(request):
     return render(request, 'jobapp/aboutUs.html')
 
