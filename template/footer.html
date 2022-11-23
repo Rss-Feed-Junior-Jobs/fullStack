@@ -10,9 +10,7 @@
             <h3>SECTIONS</h3>
             <ul class="list-unstyled">
               <li><a href="{% url 'jobapp:home' %}">Home</a></li>
-              <li><a href="{% url 'jobapp:job-list' %}">JobFinder</a></li>
               <li><a href="{% url 'jobapp:blog' %}">Blog</a></li>
-              <li><a href="#">Contact Us</a></li>
               <li><a href="{% url 'jobapp:pricing' %}">Pricing</a></li>
             </ul>
           </div>
@@ -20,15 +18,15 @@
             <h3>RSS FEED JUNIORS-JOBS</h3>
             <ul class="list-unstyled">
               <li><a href="{% url 'jobapp:aboutUs' %}">About us</a></li>
-              <li><a href="{% url 'jobapp:contactUs' %}">Contact us</a></li>
+              <li><a href="{% url 'jobapp:contactUs' %}">Contact Us</a></li>
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-4 mb-md-0">
             <h3>SUPPORT</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms of Service</a></li>
+              <li><a href="{% url 'jobapp:contactUs' %}">Support</a></li>
+              <li><a href="{% url 'jobapp:legal' %}">Privacy</a></li>
+              <li><a href="{% url 'jobapp:legal' %}">Terms of Service</a></li>
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-4 mb-md-0">
