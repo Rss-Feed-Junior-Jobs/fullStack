@@ -28,6 +28,9 @@ def blog_view(request):
 def blog_1_view(request):
     return render(request, 'jobapp/blog-1.html')
 
+def legal_view(request):
+    return render(request, 'jobapp/legal.html')
+
 def aboutUs_view(request):
     return render(request, 'jobapp/aboutUs.html')
 
